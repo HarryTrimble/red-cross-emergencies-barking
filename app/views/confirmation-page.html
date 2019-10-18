@@ -1,0 +1,29 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+  Barking flood 2019
+{% endblock %}
+
+{% block content %}
+
+{% include "includes/header-call-handler.html" %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title">Confirmation sent</h1>
+        <div class="govuk-panel__body">
+          Reference number<br><strong>HDJ2123F</strong>
+        </div>
+      </div>
+
+      <p>
+        A confirmation email has been sent to {{ data['emailAddress'] }}.
+      </p>
+
+
+    </div>
+  </div>
+
+{% endblock %}

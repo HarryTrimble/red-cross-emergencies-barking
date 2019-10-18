@@ -1,32 +1,56 @@
 
-{% extends "layout.html" %}
+{% extends "layout_unbranded.html" %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit
+  Red Cross prototypes
 {% endblock %}
 
 {% block content %}
 
+{% include "includes/header-public.html" %}
+
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
+      <br>
       <h1 class="govuk-heading-xl">
-        The GOV.UK Prototype Kit
-        <span class="govuk-caption-xl">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
-      <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
+        <span class="govuk-caption-xl">Version 2 - Barking October 2019</span>
+        Visible in emergencies
+      </h1>
+
+      <p class="govuk-body-l">
+        British Red Cross Innovation team - testing different options to make more people visible in emergencies to organisations who can support them.  
       </p>
 
-      <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
-      </p>
+      <div class="govuk-warning-text">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+          <span class="govuk-warning-text__assistive">Warning</span>
+          This prototype is out of date - see <a href="https://red-cross-emergencies.herokuapp.com">latest version</a>
+        </strong>
+      </div>
 
-      <h2 class="govuk-heading-m">About this page</h2>
+      <h2 class="govuk-heading-m">Prototypes</h2>
 
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="/public/images/radio-ad.mpeg">Radio ad</a></li>
+        <li><a href="/facebook">Facebook</a></li>
+        <li><a href="/barking-fire-2019">Landing-page</a></li>
+        <li><a href="/call-handler">Call handler view</a></li>
+        <li><a href="/email-confirmation">Confirmation email</a></li>
+        <li><a href="/co-ordinators-view">Co-ordinator view</a></li>
+      </ul>
 
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
+      <p><a href="https://github.com/HarryTrimble/red-cross-visible-in-emergencies">Source code</a></p>
+
+      <!--
+
+      <h2 class="govuk-heading-m">Old prototypes</h2>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="https://red-cross-emergencies-v1.herokuapp.com/">Version 1 - Cumbria September 2019</a></li>
+      </ul>
+
+      -->
 
       <h2 class="govuk-heading-m">Examples and documentation</h2>
 
@@ -38,6 +62,7 @@
           </a>
         </li>
       </ul>
+
     </div>
 </div>
 
